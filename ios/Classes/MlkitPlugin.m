@@ -25,7 +25,7 @@
         FIRNaturalLanguage *naturalLanguage = [FIRNaturalLanguage naturalLanguage];
         FIRLanguageIdentification *languageId = [naturalLanguage languageIdentification];
 
-        [languageId identifyLanguageForText:text
+        [languageId identifyLanguageForText: call.arguments[@"text"]
                          completion:^(NSString* languageCode,
                                       NSError* error) {
             result(languageCode);

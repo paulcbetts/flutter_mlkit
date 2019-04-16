@@ -17,7 +17,6 @@ A new flutter plugin project.
   s.dependency 'Flutter'
   s.dependency 'Firebase/MLNaturalLanguage'
   s.dependency 'Firebase/MLNLLanguageID'
-  s.dependency 'GoogleAppMeasurement', '~> 5.3.0'
   s.static_framework = true 
   s.ios.deployment_target = '9.0'
 end
