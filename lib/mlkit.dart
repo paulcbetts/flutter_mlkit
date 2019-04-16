@@ -441,6 +441,21 @@ class VisionFaceDetectorOptions {
   }
 }
 
+class FirebaseLanguageIdentification {
+  //final FirebaseLocalModelSource localModelSource;
+  //final FirebaseCloudModelSource cloudModelSource;
+  static const MethodChannel _channel =
+      const MethodChannel('plugins.flutter.io/mlkit');
+
+  static FirebaseLanguageIdentification instance = FirebaseLanguageIdentification._();
+
+  FirebaseLanguageIdentification._() {}
+
+  Future<String> identifyLanguage(String text) {
+    return _channel.invokeMethod("identifyLanguage", <String, String> {"text": text});
+  }
+}
+
 class VisionFaceDetectorClassification {
   final int value;
 

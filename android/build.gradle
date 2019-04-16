@@ -33,11 +33,7 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.google.guava:guava:20.0'
-        api 'com.google.firebase:firebase-core:16.+'
-        api 'com.google.firebase:firebase-ml-vision:18.+'
-        api 'com.google.firebase:firebase-ml-vision-image-label-model:17.+'
-        implementation 'com.google.firebase:firebase-ml-model-interpreter:16.+'
-        api "com.android.support:exifinterface:28.0.0"
+        implementation 'com.google.firebase:firebase-ml-natural-language:18.+'
+        implementation 'com.google.firebase:firebase-ml-natural-language-language-id-model:18.+'
     }
 }
